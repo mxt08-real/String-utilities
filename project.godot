@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="String utilities"
+config/description="A simple string converter, ideally for developing."
+run/main_scene="res://scenes/string_utils.tscn"
+boot_splash/image="res://boot.png"
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
+config/icon="res://icon.png"
+config/macos_native_icon="res://icon.icns"
+config/windows_native_icon="res://icon.ico"
+
+[locale]
+
+translations=PoolStringArray( "res://translations/strings.ar.translation", "res://translations/strings.ca.translation", "res://translations/strings.de.translation", "res://translations/strings.en.translation", "res://translations/strings.es.translation", "res://translations/strings.fr.translation", "res://translations/strings.he.translation", "res://translations/strings.it.translation", "res://translations/strings.ja.translation", "res://translations/strings.nl.translation", "res://translations/strings.pl.translation", "res://translations/strings.pt.translation", "res://translations/strings.ro.translation", "res://translations/strings.ru.translation", "res://translations/strings.tr.translation", "res://translations/strings.zh.translation" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
