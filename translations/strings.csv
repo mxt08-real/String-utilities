@@ -1,0 +1,8 @@
+id,en,es,fr,ca,de,it,pt,pl,nl,ro,tr,ru,he,ar,zh,ja
+MESSAGE_LABEL_INSTRUCTIONS,Type here the text that you want to encode:,Escriba aquí el texto que desea codificar:,Tapez ici le texte que vous voulez encoder :,Escriu aqui el text que vols codificar:,"Geben Sie hier den Text ein, den Sie kodieren möchten:",Digita qui il testo che vuoi codificare:,Indique aqui o texto que deseja codificar:,"Wpisz tekst, który chcesz zakodować:",Typ hier de tekst die u wilt coderen:,Tastați aici textul pe care doriți să îl codificați:,Buraya kodlamak istediğiniz metni yazın:,"Введите текст, который требуется кодировать:",הקלד כאן את הטקסט שברצונך לקודד:,اكتب هنا النص الذي تريد ترميزه:,在此处键入要编码的文本：,エンコードするテキストをここに入力します。
+MESSAGE_LABEL_ENCODE,Encode,Codificar,Coder,Codificar,Codieren,Codificare,Codificar,Zakodować,Encoderen,Codifica,Kodlar,кодировать,לקידוד,تشفير,编码,エンコード
+MESSAGE_LABEL_COPY,Copy,Copiar,Copiar,Copiar,Kopierfähig,Copy,Copiar,Egzemplarz,Kopiëren,Copie,Kopya,скопировать,להעתיק,نسخ,份,コピー
+MESSAGE_LABEL_COPIED,Copied,Copiado,Copié,Copiat,Kopiert,Copiato,Copiado,Skopiowany,Gekopieerd,Copiat,Kopyaladım,скопированный,להעתיק,نسخ,复制,コピーされ
+MESSAGE_LABEL_SAVE,Save,Guardar,Sauver,Desar,Speichern,Salvarsi,Salvar,Ratować,Bewaren,Economisi,Kurtarmaya,сохранить,לחסוך,وفر,保存,保存
+MESSAGE_LABEL_SAVED,Save,Guardado,Enregistré,Desat,Gespeichert,Salvato,Salvou,Uratował,Redde,Salvat,Kurtardı,спас,הצלת,إنقاذ,拯救了,保存され
+MESSAGE_LABEL_ES,Error saving,Error al guardar,Erreur lors de l'enregistrement,S'ha produit un error al desar,Fehler beim Speichern,Errore durante il salvataggio,Erro ao gravar,Błąd podczas zapisywania,Fout bij opslaan,Eroare la salvare,Kaydetme hatası,Сохранение ошибок,שגיאה בשמירת,خطأ في الحفظ,保存,保存エラー
