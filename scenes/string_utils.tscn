@@ -1,0 +1,134 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/string_utils.gd" type="Script" id=1]
+
+[node name="StringUtils" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions" type="Label" parent="Background"]
+anchor_left = 0.341797
+anchor_right = 0.614258
+anchor_bottom = 0.0233333
+margin_top = 10.0
+margin_bottom = 10.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MESSAGE_LABEL_INSTRUCTIONS"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Text" type="TextEdit" parent="Background"]
+anchor_left = 0.244141
+anchor_right = 0.732422
+anchor_bottom = 0.833333
+margin_top = 50.0
+margin_bottom = 50.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Algorithm" type="OptionButton" parent="Background"]
+anchor_left = 0.341797
+anchor_top = 0.933333
+anchor_right = 0.563477
+anchor_bottom = 0.966667
+mouse_default_cursor_shape = 2
+button_mask = 7
+text = "Base64"
+items = [ "Base64", null, false, 0, null, "C", null, false, 1, null, "HTTP", null, false, 2, null, "JSON", null, false, 3, null, "SHA-1", null, false, 4, null, "SHA-256", null, false, 5, null, "Hash", null, false, 6, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Encode" type="Button" parent="Background"]
+anchor_left = 0.0976562
+anchor_top = 0.933333
+anchor_right = 0.268555
+anchor_bottom = 0.966667
+mouse_default_cursor_shape = 2
+button_mask = 7
+text = "MESSAGE_LABEL_ENCODE"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Copy" type="Button" parent="Background"]
+anchor_left = 0.683594
+anchor_top = 0.933333
+anchor_right = 0.854492
+anchor_bottom = 0.966667
+mouse_default_cursor_shape = 2
+button_mask = 7
+text = "MESSAGE_LABEL_COPY"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Copied" type="Label" parent="Background"]
+visible = false
+anchor_left = 0.585938
+anchor_top = 0.933333
+anchor_right = 0.628906
+anchor_bottom = 0.956667
+custom_colors/font_color = Color( 0.117647, 0.411765, 0, 1 )
+text = "MESSAGE_LABEL_COPIED"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Save" type="Button" parent="Background"]
+anchor_left = 0.683594
+anchor_top = 0.933333
+anchor_right = 0.854492
+anchor_bottom = 0.966667
+margin_left = 100.0
+margin_top = -60.0
+margin_right = 100.0
+margin_bottom = -60.0
+mouse_default_cursor_shape = 2
+button_mask = 7
+text = "MESSAGE_LABEL_SAVE"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Saved" type="Label" parent="Background"]
+visible = false
+anchor_left = 0.78125
+anchor_top = 0.75
+anchor_right = 0.928711
+anchor_bottom = 0.773333
+custom_colors/font_color = Color( 0.117647, 0.411765, 0, 1 )
+text = "MESSAGE_LABEL_SAVED"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ErrorSaving" type="Label" parent="Background"]
+visible = false
+anchor_left = 0.78125
+anchor_top = 0.75
+anchor_right = 0.928711
+anchor_bottom = 0.773333
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "MESSAGE_LABEL_ES"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="Background/Encode" to="." method="OnEncode"]
+[connection signal="pressed" from="Background/Copy" to="." method="OnCopy"]
+[connection signal="pressed" from="Background/Save" to="." method="OnSave"]
